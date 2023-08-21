@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { Botao } from "../../styles";
+import variables from "../../styles/variables";
 
 export const CardContato = styled.div`
   display: block;
@@ -20,10 +22,8 @@ export const ContainerStatus = styled.div`
   align-items: center;
 
   ul {
-    padding-left: 24px;
-
-    li {
-      line-height: 22px;
+    textarea:first-child {
+      font-weight: bold;
     }
   }
 `;
@@ -33,4 +33,25 @@ export const ContainerButtons = styled.div`
   align-items: center;
   justify-content: flex-end;
   gap: 16px;
+`;
+
+export const BotaoDeletarECancelar = styled(Botao)`
+  background-color: ${variables.vermelho};
+`;
+
+export const BotaoEditar = styled(Botao)`
+  background-color: ${variables.amarelo};
+`;
+
+export const BotaoSalvar = styled(Botao)`
+  background-color: green;
+`;
+
+export const Descricao = styled.textarea`
+  display: inline-block;
+  font-size: 14px;
+  resize: none;
+  border: none;
+  background-color: transparent;
+  margin-left: 12px;
 `;

@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Botao } from "../../styles"
 
 export const Form = styled.form`
     display: flex;
